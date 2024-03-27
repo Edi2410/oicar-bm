@@ -18,8 +18,6 @@ services:
       dockerfile: docker/Dockerfile
     container_name: bm_api
     restart: unless-stopped
-    volumes:
-     - ./backend/api:/app/backend
     depends_on:
       - bm_db
 

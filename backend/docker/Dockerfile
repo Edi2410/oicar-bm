@@ -16,8 +16,6 @@ RUN pip install -r requirements.txt
 COPY ./api .
 COPY ./docker/wsgi-entrypoint.sh .
 
-RUN ls -a
 
 RUN ["chmod", "+x", "wsgi-entrypoint.sh"]
-
 ENTRYPOINT ["sh", "wsgi-entrypoint.sh"]
