@@ -1,0 +1,52 @@
+name: bm_mobile
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+      sdk: flutter
+  intl: ^0.18.1
+  dio: ^5.4.1
+  flutter_riverpod: ^2.4.9
+  flutter_svg: ^2.0.9
+  cupertino_icons: ^1.0.2
+  flutter_hooks: ^0.20.4
+  hooks_riverpod: ^2.4.9
+  retrofit: ^4.1.0
+  json_annotation: ^4.8.1
+  freezed: ^2.4.7
+  freezed_annotation: ^2.4.1
+  dartz: ^0.10.1
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  retrofit_generator: '>=7.0.0 <8.0.0'
+  build_runner: '>=2.3.0 <4.0.0'
+  json_serializable: ^6.6.2
+
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/images/
+
+  fonts:
+    - family: Giacomo
+      fonts:
+        - asset: assets/fonts/Giacomo_Bold.otf
+          weight: 700
+        - asset: assets/fonts/Giacomo_Light.otf
