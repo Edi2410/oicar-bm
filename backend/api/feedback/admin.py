@@ -1,3 +1,6 @@
 from django.contrib import admin
+from feedback.models import Feedback, Question, Score
 
-# Register your models here.
+admin.site.register(Feedback)
+admin.site.register(Question)
+admin.site.register(Score)
