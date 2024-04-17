@@ -66,6 +66,14 @@ SPECTACULAR_SETTINGS = {
     'SERVE_INCLUDE_SCHEMA': False,
 }
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'bm-do-not-reply@estudent.hr'
+EMAIL_HOST_PASSWORD ='85VEH7g82bJ84aD*'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_TIMEOUT = 300
+DEFAULT_FROM_EMAIL = 'Business matchamker aplikacija :)'
+
 ROOT_URLCONF = 'settings.urls'
 
 TEMPLATES = [
