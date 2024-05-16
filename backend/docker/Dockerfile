@@ -17,5 +17,6 @@ COPY ./api .
 COPY ./docker/wsgi-entrypoint.sh .
 
 
+
 RUN ["chmod", "+x", "wsgi-entrypoint.sh"]
 ENTRYPOINT ["sh", "wsgi-entrypoint.sh"]

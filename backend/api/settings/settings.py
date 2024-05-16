@@ -122,7 +122,7 @@ WSGI_APPLICATION = "settings.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": env("POSTGRES_DB"),
+        "NAME": env("POSTGRES_DB_NAME"),
         "USER": env("POSTGRES_USER"),
         "PASSWORD": env("POSTGRES_PASSWORD"),
         "HOST": env("POSTGRES_DB_HOST"),
@@ -186,7 +186,7 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "staticfiles"),
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 

@@ -1,4 +1,12 @@
-asgiref==3.8.1
-Django==5.0.3
+Django===5.0
+djangorestframework===3.14.0
+drf-spectacular===0.27.0
+djangorestframework-simplejwt===5.3.1
+django-cors-headers===4.3.1
+django-environ==0.11.2
+django-filter==24.2
+psycopg2===2.9.9
+Markdown==3.6
 sqlparse==0.4.4
-psycopg2==2.9.9
+tzdata==2024.1
+

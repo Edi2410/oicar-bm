@@ -8,6 +8,7 @@ services:
       - 8701:80
     volumes:
       - ./backend/staticfiles:/static:ro
+    restart: unless-stopped
     depends_on:
       - bm_fe
       - bm_db
@@ -28,6 +29,7 @@ services:
       dockerfile: docker/Dockerfile
     volumes:
       - "./frontend/web:/app/backend"
+    restart: unless-stopped
       
   bm_db:
     container_name: ${POSTGRES_DB_HOST}
@@ -36,7 +38,7 @@ services:
     env_file:
       - .env
     environment:
-      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_DB: ${POSTGRES_DB_NAME}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       PGDATA: /var/lib/postgresql/data
