@@ -38,8 +38,9 @@ class UserView(viewsets.GenericViewSet):
                 "is_admin": user_data_serializer.data["is_admin"],
                 "is_student": user_data_serializer.data["is_student"],
                 "group": user_data_serializer.data["group"],
-                "folder_id": folder_id_serializer.data if len(folder_id) > 0 else "",
+                "folder_id": folder_id_serializer.data if len(folder_id) > 0 else None,
             }
+            
             return Response(return_value, status=status.HTTP_200_OK)
         except UserData.DoesNotExist:
             return Response(

@@ -35,7 +35,7 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG")
 
-ALLOWED_HOSTS = ["bm.estudent.hr", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["bm.estudent.hr", "localhost", "127.0.0.1", "*", "10.0.2.2"]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8701",
@@ -186,7 +186,7 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "staticfiles"),
+    os.path.join(BASE_DIR, "static"),
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 

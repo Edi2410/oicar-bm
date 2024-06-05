@@ -4,7 +4,7 @@ export type UserData = {
   is_company: boolean;
   is_student: boolean;
   group: UserGroupData;
-  folder_id: FolderData[];
+  folder_id?: FolderData[];
 };
 
 export type User = {
