@@ -7,7 +7,7 @@ Postaviti .env filove tamo gdje se nalaze primjeri .env filova. Prave vrijednost
 
 Provijeriti jeli setapirano na backendu da gleda bazu u dockeru i dali frontend gleda dobar url
 
-Pokrenite komandu 'docker compose u p -d --build'
+Pokrenite komandu 'docker compose up -d --build'
 
 
 ### Kreiranje inicialnog superadmina

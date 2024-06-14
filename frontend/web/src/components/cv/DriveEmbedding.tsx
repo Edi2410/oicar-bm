@@ -18,6 +18,7 @@ const DriveEmbedding = () => {
         <details key={folder?.id}>
           <summary>{folder?.folder_name}</summary>
           <iframe
+            title={`iframe-${folder.id}`}
             src={`https://drive.google.com/embeddedfolderview?id=${folder.drive_link}#list`}
           />
         </details>
