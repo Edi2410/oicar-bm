@@ -53,7 +53,7 @@ const FeedbackPage = () => {
       }}
       title={<Typography.Title level={3}>Predaj feedback</Typography.Title>}
     >
-      <Form layout="vertical" onFinish={formSubmit} form={form}>
+      <Form layout="vertical" onFinish={formSubmit} form={form} role="form">
         <Form.Item
           name={["feedback_for"]}
           rules={[
@@ -123,7 +123,7 @@ const FeedbackPage = () => {
           name={["comment"]}
           rules={[{ required: true, message: "Unesi komentar", min: 15 }]}
         >
-          <Input.TextArea style={{ height: "125px" }} showCount />
+          <Input.TextArea style={{ height: "125px" }} role="textbox" showCount />
         </Form.Item>
         <Flex justify="end">
           <Form.Item style={{ margin: "0" }}>
@@ -132,6 +132,7 @@ const FeedbackPage = () => {
               htmlType="submit"
               style={{ fontWeight: "bold" }}
               loading={isLoading}
+              role="button"
             >
               Predaj
             </Button>
